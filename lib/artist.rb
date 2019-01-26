@@ -19,7 +19,7 @@ class Artist
     if (result != nil)
       return result
     else
-      resturn self.new(name)
+      return self.new(name)
 
     end
 
