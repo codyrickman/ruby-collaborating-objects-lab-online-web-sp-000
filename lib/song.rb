@@ -9,7 +9,7 @@ class Song
     new_song.artist = parsed[0]
   end
   def artist=(artist_name)
-    @artist = artist_name(artist_name)
+    @artist = self.artist_name(artist_name)
     @artist
   end
   def artist_name=(name)
