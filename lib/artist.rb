@@ -20,7 +20,7 @@ class Artist
         return obj
       end
     end
-    return Artist.new (name)
+    return self.new (name)
   end
   def print_songs
     @songs.each do |song|
