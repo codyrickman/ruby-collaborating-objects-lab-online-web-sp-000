@@ -15,13 +15,8 @@ class Artist
     @@all
   end
   def self.find_or_create_by_name(name)
-    @@all.each do |obj|
-      if (obj.name == name)
-        return obj
-      end
+    @@all.select {|obj| obj.name == name}
     end
-    artist = self.new (name)
-    artist.save
   end
   def print_songs
     @songs.each do |song|
