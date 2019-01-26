@@ -19,7 +19,9 @@ class Artist
     if (result != nil)
       return result
     else
-      return Artist.new(name)
+      new_artist = Artist.new(name)
+      new_artist.save
+      return new_artist
     end
   end
   def print_songs
