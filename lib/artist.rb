@@ -20,8 +20,8 @@ class Artist
         return obj
       end
     end
-    self.new (name)
-    self.save
+    artist = self.new (name)
+    artist.save
   end
   def print_songs
     @songs.each do |song|
