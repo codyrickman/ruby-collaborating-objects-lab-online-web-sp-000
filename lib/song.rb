@@ -7,9 +7,8 @@ class Song
     parsed = file_name.split(" - ")
     new_song = self.new(parsed[1])
     new_song.artist = parsed[0]
-
   end
   def artist=(name)
-    @artist = Artist.find_or_create_by_name(name)
+    return Artist.find_or_create_by_name(name)
   end
 end
