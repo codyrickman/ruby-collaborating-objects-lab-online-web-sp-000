@@ -15,7 +15,7 @@ class Artist
     @@all
   end
   def self.find_or_create_by_name(name)
-    @@all.select {|obj| obj.name == name}
+    @@all.select { |obj| obj.name == name}
     end
   end
   def print_songs
