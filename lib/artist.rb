@@ -21,6 +21,7 @@ class Artist
       end
     end
     self.new (name)
+    self.save
   end
   def print_songs
     @songs.each do |song|
