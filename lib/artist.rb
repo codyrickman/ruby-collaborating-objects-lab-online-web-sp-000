@@ -15,14 +15,12 @@ class Artist
     @@all
   end
   def self.find_or_create_by_name(name)
-    result = @@all.select {|obj| obj.name == name}
+    result = @@all.find {|obj| obj.name == name}
     if (result != nil)
       return result
     else
       return self.new(name)
-
     end
-
   end
   def print_songs
     @songs.each do |song|
